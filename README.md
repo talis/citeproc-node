@@ -2,7 +2,7 @@
 
 ## install
 
-> git clone --recursive git://github.com/fcheslack/citeproc-node.git
+> git clone --recursive git@github.com:talis/citeproc-node.git
 
 > npm rebuild
 
