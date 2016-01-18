@@ -2,7 +2,7 @@
     "debugType" : "file", 
     "debugLog":true,
     "debugLogPath" : "./citeServerLog",
-    "debugPrintLevel" : 5,
+    "debugPrintLevel" : 1,
     "localesPath" : "./csl-locales",
     "cslPath" : "./csl",
     "citeprocmodulePath" : "./citeprocmodule",
