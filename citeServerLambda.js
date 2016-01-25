@@ -545,7 +545,7 @@ exports.handler = function (event, context) {
         function(zcreq, callback){// runRequest
           zcite.debug("request step: runRequest", 5);
           zcite.runRequest(zcreq, function(err, response){
-            context.succeed(JSON.stringify(response));
+            context.succeed(response);
           });
         }
       ],

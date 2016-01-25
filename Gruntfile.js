@@ -90,6 +90,9 @@ module.exports = function(grunt) {
     },
     lambda_package: {
       default: {
+        options:{
+          include_time:false
+        }
       }
     },
     testStyles:[
@@ -144,7 +147,7 @@ module.exports = function(grunt) {
   grunt.registerTask('test', function(){
     grunt.task.run(['testStyles', 'clean:events']);
   });
-  grunt.registerTask('dist', ['lambda_package']);
+  grunt.registerTask('dist', ['clean:dist', 'clean:events', 'lambda_package']);
   grunt.registerTask('deploy', ['clean:dist', 'clean:events', 'lambda_package', 'lambda_deploy']);
 
   grunt.registerTask('default', ['test']);
