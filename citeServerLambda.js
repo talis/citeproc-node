@@ -545,6 +545,7 @@ exports.handler = function (event, context) {
         function(zcreq, callback){// runRequest
           zcite.debug("request step: runRequest", 5);
           zcite.runRequest(zcreq, function(err, response){
+	    console.log('SUCCEED');
             context.succeed(response);
           });
         }
